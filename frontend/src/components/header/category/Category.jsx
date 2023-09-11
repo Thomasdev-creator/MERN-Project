@@ -8,11 +8,11 @@ import { MdNavigateNext } from "react-icons/md"
 import { GrFormPrevious } from "react-icons/gr"
 
 const SmapleNextArrow = (props) => {
-    const {onclick} = props
+    const {onClick} = props
     return (
         <div 
         className="control-btn"
-        onclick={onclick}>
+        onClick={onClick}>
             <button className="next">
                 <MdNavigateNext className="icon" />
             </button>
@@ -21,11 +21,11 @@ const SmapleNextArrow = (props) => {
 }
 
 const SmaplePrevArrow = (props) => {
-    const {onclick} = props
+    const {onClick} = props
     return (
         <div 
         className="control-btn"
-        onclick={onclick}>
+        onClick={onClick}>
             <button className="prev">
                 <GrFormPrevious className="icon" />
             </button>
