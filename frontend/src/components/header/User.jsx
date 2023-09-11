@@ -6,16 +6,34 @@ import { BsBagCheck } from "react-icons/bs"
 import { AiOutlineHeart } from "react-icons/ai"
 import { GrHelp } from "react-icons/gr"
 import { BiLogOut } from "react-icons/bi"
+import { useState } from "react"
 
 export default function User() {
+
+  const user = true
+
+  const [profileOpen, setProfileOpen] = useState(false)
+
+  const close = () => {
+    setProfileOpen(false)
+  }
+
   return (
     <>
       <div className="profile">
-        <button className="img">
+        {user ?
+        (
+          <>
+        <button 
+        className="img"
+        onClick={() => setProfileOpen(!profileOpen)}>
           <img src="https://images.pexels.com/photos/2076596/pexels-photo-2076596.jpeg" alt="" />
         </button>
-
-      <div className="openProfile boxItems">
+      
+    {profileOpen && (
+      <div 
+      className="openProfile boxItems"
+      onClick={close}>
         <Link to="account">
           <div className="image">
             <div className="img">
@@ -54,6 +72,11 @@ export default function User() {
             <h4>Log Out</h4>
           </button>
       </div>
+    )}
+          </>
+        ) : (<Link to="/login">
+          <button>My account</button>
+        </Link>)}
       </div>
     </>
   )

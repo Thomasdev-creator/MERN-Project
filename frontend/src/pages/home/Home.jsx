@@ -1,10 +1,10 @@
 import react from "react"
-import Header from "../../components/header/Header"
+import Category from "../../components/header/category/Category"
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Category />
     </>
   )
 }

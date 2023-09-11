@@ -6,9 +6,13 @@ import { nav } from "../../assets/data/data"
 import User from "./User"
 
 export default function Header() {
+    window.addEventListener("scroll", function(){
+        const header = this.document.querySelector(".header")
+        header.classList.toggle("active", this.window.scrollY > 100)
+    })
   return (
     <>
-        <header>
+        <header className="header">
             <div className="container flex">
                 <div className="logo">
                     <img src={logo} alt="logo" width="100px" />
@@ -27,6 +31,8 @@ export default function Header() {
                 </div>
             </div>
         </header>
+
+        <section></section>
     </>
   )
 }
