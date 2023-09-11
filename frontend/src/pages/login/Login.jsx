@@ -7,7 +7,7 @@ export default function Login() {
   return (
     <>
        <section className="login">
-        <div className="container">
+        <div className="containers">
             <div className="backImg">
                 <img src={back} alt="" />
                 <div className="text">

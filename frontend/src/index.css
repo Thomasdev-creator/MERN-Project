@@ -87,6 +87,12 @@ form input {
   margin-bottom: 30px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
 .grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -113,3 +119,94 @@ form input {
   left: 1px;
   padding: 15px 28px;
 }
+
+footer {
+  padding: 10px;
+}
+
+footer .icon {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width:768px) {
+  .grid3,
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:375px) {
+  .grid3,
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.link {
+  color: #000;
+}
+
+@media screen and (max-width:1024px) {
+  form {
+    width: 70%; 
+  }
+}
+
+@media screen and (max-width:600px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h3 {
+    font-size: 15px;
+  }
+  
+  ::placeholder {
+    font-size: 15px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  label {
+    font-size: 12px;
+  }
+  
+  form, .boxItems {
+    padding: 15px;
+  }
+  
+  form {
+    width: 90%; 
+    padding: 20px;
+  }
+  
+  form textarea,
+  .accountInfo .right input, 
+  form input {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  
+  .button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 8px;
+  }
+
+  footer .icon {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+}
+

@@ -1,56 +1,38 @@
-.accountInfo {
-    margin: 115px;
+.login {
+    position: relative;
+    margin-bottom: 50px;
 }
 
-.accountInfo .container {
-    padding: 50px;
-    max-width: 60%;
-    margin: auto;
-}
-
-.accountInfo .content {
-   margin-top: 80px;
-   display: flex;
-   justify-content: flex-start;
-}
-
-.accountInfo .left {
-    width: 150px;
+.login .backImg {
+    width: 100%;
+    height: 50vh;
     position: relative;
 }
 
-.accountInfo .right {
-    width: calc(100% -180px);
-    margin-left: 50px;
+.login .backImg img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
 }
 
-.accountInfo .left .img input {
-    width: 150px;
-    height: 150px;
-    position: relative;
-    z-index: 2;
-    opacity: 0;
-}
-
-.accountInfo .img img {
+.login .text {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
+    top: 40%;
+    left: 50%;
     z-index: 1;
-    border-radius: 50%;
+    text-align: center;
+    color: #fff;
 }
 
-.accountInfo .right .label {
-    font-size: 17px;
-    color: #000;
+.login .text h3 {
+    font-weight: 600;
     margin-bottom: 10px;
-    display: block;
 }
 
+.login .text h1 {
+    font-size: 40px;
+}
 
-
-
-
-
+.login a {
+    margin-top: 20px;
+}

@@ -10,7 +10,7 @@ import { useState } from "react"
 
 export default function User() {
 
-  const user = false
+  const user = true
 
   const [profileOpen, setProfileOpen] = useState(false)
 

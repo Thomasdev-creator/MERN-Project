@@ -5,6 +5,9 @@ import Header from "./components/header/Header"
 import Details from "./pages/details/Details"
 import Account from "./pages/account/Account"
 import Login from "./pages/login/Login"
+import Register from "./pages/login/Register"
+import Create from "./components/create/Create"
+import Footer from "./components/footer/Footer"
 
 export default function App() {
   return (
@@ -16,7 +19,10 @@ export default function App() {
         <Route path="/details/:id" element={<Details />} />
         <Route path="/account" element={<Account />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/create" element={<Create />} />
       </Routes>
+      <Footer />
     </Router>
     </>
   )
