@@ -10,7 +10,7 @@ import { useState } from "react"
 
 export default function User() {
 
-  const user = true
+  const user = false
 
   const [profileOpen, setProfileOpen] = useState(false)
 
@@ -34,7 +34,7 @@ export default function User() {
       <div 
       className="openProfile boxItems"
       onClick={close}>
-        <Link to="account">
+        <Link to="/account">
           <div className="image">
             <div className="img">
               <img src="https://images.pexels.com/photos/2076596/pexels-photo-2076596.jpeg" alt="" />
