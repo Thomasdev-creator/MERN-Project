@@ -6,18 +6,8 @@ export const nav = [
   },
   {
     id: 2,
-    text: "about",
-    url: "/about",
-  },
-  {
-    id: 3,
-    text: "pages",
-    url: "/pages",
-  },
-  {
-    id: 4,
-    text: "blog",
-    url: "/blog",
+    text: "Services",
+    url: "/services",
   },
   {
     id: 5,
