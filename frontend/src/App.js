@@ -9,6 +9,7 @@ import Register from "./pages/login/Register"
 import Create from "./components/create/Create"
 import Footer from "./components/footer/Footer"
 import Services from "./pages/services/Services"
+import Contact from "./pages/contact/Contact"
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/create" element={<Create />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

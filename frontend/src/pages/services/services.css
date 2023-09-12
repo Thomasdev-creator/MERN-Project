@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+  }
+  
+  .text-block {
+    background-color: #e9e9e9; 
+    padding: 20px;
+    border-radius: 8px;
+    padding: 40px;
+  }
+
+  
