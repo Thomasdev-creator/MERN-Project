@@ -8,7 +8,7 @@ import Login from "./pages/login/Login"
 import Register from "./pages/login/Register"
 import Create from "./components/create/Create"
 import Footer from "./components/footer/Footer"
-import Services from "./pages/services/Services"
+import Services from "./pages/services/services"
 
 export default function App() {
   return (
