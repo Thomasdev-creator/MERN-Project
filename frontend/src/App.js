@@ -8,7 +8,6 @@ import Login from "./pages/login/Login"
 import Register from "./pages/login/Register"
 import Create from "./components/create/Create"
 import Footer from "./components/footer/Footer"
-import Services from "./pages/services/services"
 
 export default function App() {
   return (
@@ -22,7 +21,6 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/create" element={<Create />} />
-        <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
     </Router>
